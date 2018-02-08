@@ -49,6 +49,7 @@ function handleFile(name, file, options, cache, callback) {
 		});
 	}
 	else {
+		cachedData.name = name;
 		return callback(null, cachedData);
 	}
 }
